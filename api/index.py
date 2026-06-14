@@ -6,7 +6,4 @@ def webhook(path):
         update = request.get_json()
         if "message" in update and "text" in update["message"]:
             chat_id = update["message"]["chat"]["id"]
-            user_text = update["message"]["text"]
-            
-            # জেমিনি থেকে উত্তর আনা
-            bot_response = get_gemini_response(user_tex
+            user_text = update["message"]["tex
